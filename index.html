@@ -3,68 +3,76 @@ index.html
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>La mia prima app sportiva</title>
+<title>SportApp</title>
+
+<!-- Font moderno -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 <style>
-body { font-family: Arial; max-width: 600px; margin: auto; }
-.post { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; }
+body { font-family: 'Roboto', sans-serif; max-width: 600px; margin: auto; background-color: #f0f2f5; }
+
+/* Header con logo */
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #1e90ff;
+color: white;
+padding: 10px 20px;
+border-radius: 10px 10px 0 0;
+}
+
+/* Stile post */
+.post {
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+padding: 15px;
+margin: 15px 0;
+background-color: #fafafa;
+}
+
+/* Cuore cliccabile */
 .like { color: red; cursor: pointer; }
 </style>
 </head>
 <body>
-<h1>Ciao! Questa è la mia prima pagina sportiva 💪</h1>
-<img src="https://via.placeholder.com/500x200?text=Sport+App" alt="Sport App">
 
+<!-- Header -->
+<header>
+<h2>SportApp</h2>
+<img src="https://via.placeholder.com/40" alt="Logo">
+</header>
+
+<!-- Feed finto -->
 <div class="post">
-<p><strong>Mario</strong> ha corso 5 km oggi!</p>
+<p><strong>Mario</strong> ha corso 5 km oggi 🏃‍♂️</p>
+<img src="https://via.placeholder.com/500x200?text=Corsa" alt="Corsa">
 <span class="like">❤️ Like</span>
 </div>
 
 <div class="post">
 <p><strong>Luca</strong> ha fatto 50 flessioni 💪</p>
-<span class="like">❤️ Like</span>
-</div>
-</body>
-</html>
-
-
-Il giorno mer 25 feb 2026 alle 17:13 Nicoló La Coppola <lacoppolanicolo@gmail.com> ha scritto:
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-<title>La mia prima app sportiva</title>
-<style>
-body { font-family: Arial; max-width: 600px; margin: auto; }
-.post { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; }
-.like { color: red; cursor: pointer; }
-</style>
-</head>
-<body>
-<h1>Ciao! Questa è la mia prima pagina sportiva 💪</h1>
-<img src="https://via.placeholder.com/500x200?text=Sport+App" alt="Sport App">
-
-<div class="post">
-<p><strong>Mario</strong> ha corso 5 km oggi!</p>
+<img src="https://via.placeholder.com/500x200?text=Flessioni" alt="Flessioni">
 <span class="like">❤️ Like</span>
 </div>
 
 <div class="post">
-<p><strong>Luca</strong> ha fatto 50 flessioni 💪</p>
+<p><strong>Anna</strong> ha fatto 10 km in bici 🚴‍♀️</p>
+<img src="https://via.placeholder.com/500x200?text=Bici" alt="Bici">
 <span class="like">❤️ Like</span>
 </div>
-</body>
-</html>
 
+<!-- JavaScript cuore cliccabile -->
+<script>
+const hearts = document.querySelectorAll('.like');
+hearts.forEach(h => {
+h.addEventListener('click', () => {
+if (h.style.color === 'red') h.style.color = 'gray';
+else h.style.color = 'red';
+});
+});
+</script>
 
-Il giorno mer 25 feb 2026 alle 16:12 Nicoló La Coppola <lacoppolanicolo@gmail.com> ha scritto:
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-<title>La mia prima app sportiva</title>
-</head>
-<body>
-<h1>Ciao! Questa è la mia prima pagina sportiva 💪</h1>
-<p>Sto imparando a costruire la mia app passo passo.</p>
 </body>
 </html>
